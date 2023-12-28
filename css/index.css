@@ -117,7 +117,7 @@ body {
 
 /* ----------- HEADER -------------- */
 header {
-  background-image: url('/images/bg_header.png');
+  background-image: url('images/bg_header.png');
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -380,16 +380,16 @@ header > .rich-nav {
 }
 
 .list-benefit > .benefit-1 {
-  background-image: url('/images/bg_benefit_01.png');
+  background-image: url('images/bg_benefit_01.png');
 }
 .list-benefit > .benefit-2 {
-  background-image: url('/images/bg_benefit_02.png');
+  background-image: url('images/bg_benefit_02.png');
 }
 .list-benefit > .benefit-3 {
-  background-image: url('/images/bg_benefit_03.png');
+  background-image: url('images/bg_benefit_03.png');
 }
 .list-benefit > .benefit-4 {
-  background-image: url('/images/bg_benefit_04.png');
+  background-image: url('images/bg_benefit_04.png');
 }
 
 /* --------------SECTION BLOCK 2 (EXPERTISE)------------- */
@@ -479,7 +479,7 @@ header > .rich-nav {
 
 /* --------------SECTION BLOCK 3 (GET STARTED)------------- */
 .section-block-03 {
-  background-image: url('/images/bg_expertise_experience.png');
+  background-image: url('images/bg_expertise_experience.png');
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -558,11 +558,11 @@ header > .rich-nav {
 }
 
 .project-slider > .project-1 {
-  background-image: url('/images/bg_project_01.png');
+  background-image: url('images/bg_project_01.png');
 }
 
 .project-slider > .project-2 {
-  background-image: url('/images/bg_project_02.png');
+  background-image: url('images/bg_project_02.png');
 }
 
 .slider-button-wrapper {
