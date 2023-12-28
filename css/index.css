@@ -18,7 +18,7 @@ body {
   margin: auto;
 }
 
-/* ----------- Text Style -------------- */
+/* ----------- Text & Background Style -------------- */
 .heading-light-01 {
   font-family: 'Unbounded', sans-serif;
   font-weight: 300;
@@ -70,15 +70,42 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.transparent-nav {
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .white-text-01 {
   color: #fff;
 }
 
-.white-text-01 {
+.white-text-02 {
   color: #e4e4e4;
 }
 
-/* --------------------------------------- */
+.inter-14-400 {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.unbounded-40-300 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.unbounded-30-300 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 
 /* ----------- HEADER -------------- */
 header {
@@ -95,6 +122,10 @@ main p {
 }
 
 /* ----------- RICH NAV -------------- */
+header > .rich-nav {
+  margin-bottom: 223px;
+}
+
 .rich-nav > .flex-container {
   height: 134px;
 }
@@ -144,6 +175,85 @@ main p {
   border: 2px solid #fff;
 }
 
+.rich-nav > .grid-container > .item1 {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding-left: 31px;
+}
+
+.rich-nav > .grid-container > .item1 > .logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rich-nav > .grid-container > .item1 > .logo-wrapper > p {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.rich-nav > .grid-container > .item1 > p {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* ----------- HERO -------------- */
+
+.hero-section {
+  margin-bottom: 82px;
+}
+.hero-section > .year-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 66px;
+}
+
+.hero-section > .year-wrapper > .year-text {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+
+.hero-section > .year-wrapper > #year-description-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.primary-heading-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.absolute-tagline {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aside-hero-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* ----------- SIMPLE NAV -------------- */
 .simple-nav {
   margin-top: 20px;
@@ -152,38 +262,219 @@ main p {
 .simple-nav > .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 96px;
 }
 
 .simple-nav > .grid-container > .box {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid #000;
-  height: 100px;
+  height: 192px;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.simple-nav-menu {
+  text-decoration: none;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.underline-menu {
+  width: 100%;
+  height: 2px;
+  flex-shrink: 0;
+  background: white;
 }
 
 /* ----------- Section Block 1 -------------- */
 .section-block-01 {
-  margin-top: 20px;
+  margin-top: 95px;
+}
+
+.section-block-01 > .grid-container > .item1 {
+  grid-area: A;
+  padding-right: 254px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 8px;
+}
+.section-block-01 > .grid-container > .item2 {
+  grid-area: B;
+  padding-right: 240px;
+}
+.section-block-01 > .grid-container > .item3 {
+  grid-area: C;
+  display: flex;
+  padding-top: 58px;
+  align-items: end;
+}
+.section-block-01 > .grid-container > .item4 {
+  grid-area: D;
+}
+.section-block-01 > .grid-container > .item5 {
+  grid-area: E;
+  padding-right: 240px;
+}
+.section-block-01 > .grid-container > .item6 {
+  grid-area: F;
+  display: flex;
+  align-items: end;
+}
+
+.section-block-01 > .grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A B G G'
+    'D D D C C'
+    'F F E C C';
+}
+
+.section-block-01 > .grid-container > .box {
+  padding-top: 31px;
+}
+
+.section-block-01 > .grid-container > .item3 > .ball-wrapper {
+  margin: auto;
+  padding: 0 12px;
+  background: #202020;
+}
+
+.list-benefit {
+  margin-top: 158px;
   display: flex;
   flex-wrap: wrap;
   background-color: #b877ff;
 }
 
-.section-block-01 > .box {
+.list-benefit > .box {
   flex: 1 1 50%; /* 50% width untuk desktop, 100% width untuk mobile */
   box-sizing: border-box;
   height: 100px; /* Sesuaikan tinggi kotak sesuai kebutuhan */
 }
-/* --------------------------------------- */
+
+.list-benefit > .box {
+  width: 100%;
+  height: 289px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 300px 45px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 38px;
+}
+
+.list-benefit > .benefit-1 {
+  background-image: url('/images/bg_benefit_01.png');
+}
+.list-benefit > .benefit-2 {
+  background-image: url('/images/bg_benefit_01.png');
+}
+.list-benefit > .benefit-3 {
+  background-image: url('/images/bg_benefit_01.png');
+}
+.list-benefit > .benefit-4 {
+  background-image: url('/images/bg_benefit_01.png');
+}
+
+/* --------------SECTION BLOCK 2 (EXPERTISE)------------- */
+.section-block-02 > .grid-container > .item1 {
+  grid-area: A;
+}
+.section-block-02 > .grid-container > .item2 {
+  grid-area: B;
+}
+.section-block-02 > .grid-container > .item3 {
+  grid-area: C;
+}
+.section-block-02 > .grid-container > .item4 {
+  grid-area: D;
+}
+.section-block-02 > .grid-container > .item5 {
+  grid-area: E;
+}
+.section-block-02 > .grid-container > .item6 {
+  grid-area: F;
+}
+.section-block-02 > .grid-container > .item7 {
+  grid-area: G;
+}
+.section-block-02 > .grid-container > .item8 {
+  grid-area: H;
+}
+
+.section-block-02 > .grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A B B B'
+    'A A B B B'
+    'F F E D C'
+    'F F G G G'
+    'F F H H H';
+}
+.section-block-02 > .grid-container > .box {
+  color: #b877ff;
+}
+.section-block-02 > .grid-container > .item1 {
+  padding-right: 254px;
+  padding-top: 26px;
+}
+.section-block-02 > .grid-container > .item2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 109px;
+  padding: 26px 0;
+}
+.section-block-02 > .grid-container > .item3 {
+  padding: 40px;
+}
+.section-block-02 > .grid-container > .item4 {
+  padding: 40px;
+}
+.section-block-02 > .grid-container > .item5 {
+  padding: 40px;
+}
+.section-block-02 > .grid-container > .item6 {
+  display: flex;
+  align-items: end;
+  padding-bottom: 152px;
+}
+.section-block-02 > .grid-container > .item7 {
+  padding-bottom: 55px;
+  padding-top: 25px;
+  padding-left: 51px;
+}
+.section-block-02 > .grid-container > .item8 {
+  padding-top: 21px;
+  padding-right: 482px;
+}
+.section-block-02 > .grid-container > .item3,
+.section-block-02 > .grid-container > .item4,
+.section-block-02 > .grid-container > .item5,
+.section-block-02 > .grid-container > .item7 {
+  border: 2px solid #fff;
+  gap: 6px;
+}
+
+/* --------------FOOTER------------- */
+footer > .rich-nav {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* -------------------------------------- */
+/* --------------MEDIA QUERY------------- */
+/* -------------------------------------- */
 
 @media (max-width: 600px) {
   .container {
     max-width: 335px;
   }
 
-  /* simple nav */
+  /* --------------SIMPLE NAV RESPONSIVE------------- */
   .simple-nav > .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -197,8 +488,21 @@ main p {
     order: 3; /* Mengubah urutan kotak 4 menjadi 3 pada tampilan mobile */
   }
 
-  /* ----------- Section Block 1 -------------- */
-  .section-block-01 > .box {
+  .simple-nav > .grid-container {
+    gap: 39px;
+  }
+
+  .simple-nav > .grid-container > .box {
+    gap: 7px;
+    height: 90px;
+  }
+
+  .simple-nav-menu {
+    font-size: 12px;
+  }
+
+  /* ----------- SECTION BLOCK 1 RESPONSIVE -------------- */
+  .list-benefit > .box {
     flex: 1 1 100%;
   }
 }
