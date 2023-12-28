@@ -107,6 +107,14 @@ body {
   line-height: normal;
 }
 
+.inter-12-400 {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* ----------- HEADER -------------- */
 header {
   background-image: url('/images/bg_header.png');
@@ -371,13 +379,13 @@ header > .rich-nav {
   background-image: url('/images/bg_benefit_01.png');
 }
 .list-benefit > .benefit-2 {
-  background-image: url('/images/bg_benefit_01.png');
+  background-image: url('/images/bg_benefit_02.png');
 }
 .list-benefit > .benefit-3 {
-  background-image: url('/images/bg_benefit_01.png');
+  background-image: url('/images/bg_benefit_03.png');
 }
 .list-benefit > .benefit-4 {
-  background-image: url('/images/bg_benefit_01.png');
+  background-image: url('/images/bg_benefit_04.png');
 }
 
 /* --------------SECTION BLOCK 2 (EXPERTISE)------------- */
@@ -457,6 +465,99 @@ header > .rich-nav {
 .section-block-02 > .grid-container > .item7 {
   border: 2px solid #fff;
   gap: 6px;
+}
+
+/* --------------SECTION BLOCK 3 (GET STARTED)------------- */
+.section-block-03 {
+  background-image: url('/images/bg_expertise_experience.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 68px;
+  margin-top: 71px;
+}
+
+.section-block-03 > .container > .top-position-banner {
+  display: flex;
+  margin-bottom: 312px;
+}
+
+.section-block-03 > .container > .top-position-banner > .left-top {
+  width: 60%;
+}
+.section-block-03 > .container > .top-position-banner > .right-top {
+  width: 40%;
+  display: flex;
+  gap: 108px;
+}
+
+.section-block-03 > .container > .bottom-position-banner {
+  display: flex;
+  align-items: center;
+}
+
+.section-block-03 > .container > .bottom-position-banner > .left-top {
+  width: 60%;
+}
+.section-block-03 > .container > .bottom-position-banner > .right-top {
+  width: 40%;
+}
+
+/* --------------SECTION BLOCK 4 (WHAT WE DO)------------- */
+.section-block-04 {
+  margin-top: 97px;
+}
+
+.section-block-04 > .description {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 81px;
+}
+.section-block-04 > .description > .logo {
+  padding-right: 260px;
+}
+
+.section-block-04 > .slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-block-04 > .slider-wrapper > .title {
+  margin-bottom: 71px;
+}
+
+.project-slider {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.project-slider > .box {
+  width: 100%;
+  height: 337px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 300px 45px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex: 1 1 50%; /* 50% width untuk desktop, 100% width untuk mobile */
+  box-sizing: border-box;
+}
+
+.project-slider > .project-1 {
+  background-image: url('/images/bg_project_01.png');
+}
+
+.project-slider > .project-2 {
+  background-image: url('/images/bg_project_02.png');
+}
+
+.slider-button-wrapper {
+  display: flex;
+  gap: 37px;
 }
 
 /* --------------FOOTER------------- */
